@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster Kombat UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- Верхняя панель с профилем и информацией -->
+        <div id="topBar">
+            <div id="profileSection">
+                <button id="buySkinButton">Купить скин</button>
+                <span id="username">DenchiK (CEO)</span>
+            </div>
+            <div id="keysSection">
+                <img src="key.png" alt="Keys Icon" id="keysIcon">
+                <span id="keysCount">0</span>
+            </div>
+        </div>
+
+        <!-- Секция с уровнем и доходом -->
+        <div id="levelIncomeSection">
+            <span id="levelInfo">Grandmaster 9/11</span>
+            <div id="incomeInfo">
+                <img src="images/hamster.png" alt="Hamster" id="hamster">
+                <span id="incomeRate">+1.79M</span>
+            </div>
+            <img src="settings_icon.png" alt="Settings Icon" id="settingsIcon">
+        </div>
+
+        <!-- Секция с ежедневными наградами -->
+        <div id="rewardsSection">
+            <div class="rewardItem">Ежедневная награда</div>
+            <div class="rewardItem">Ежедневный шифр</div>
+            <div class="rewardItem">Комбо</div>
+            <div class="rewardItem">Мини-игра</div>
+        </div>
+
+        <!-- Счётчик монет -->
+        <div id="coinDisplay">
+            <span id="coinCount">65 063 042</span>
+        </div>
+
+        <!-- Контейнер для изображения хомяка -->
+        <div id="hamsterWrapper">
+            <div id="hamsterContainer">
+                <img src="hamster.png" alt="Hamster" id="hamster">
+            </div>
+        </div>
+
+        <!-- Секция энергии и ускорения -->
+        <div id="energySection">
+            <span id="energyText">7131 / 7500</span>
+            <button id="boostButton">Ускорить</button>
+        </div>
+    </div>
+
+    <!-- Панель навигации -->
+    <div id="bottomNav">
+        <div class="navItem" id="mainButton">Главная</div>
+        <div class="navItem" id="quistButton">Quist</div>
+    </div>
+
+    <!-- Секция квестов -->
+    <div id="questsSection">
+        <button id="backButton">Назад</button>
+        <div id="questContainer">
+            <div class="questItem">
+                <h2>Квест 1</h2>
+                <p>Описание квеста 1. Выполните это задание, чтобы получить награду.</p>
+            </div>
+            <div class="questItem">
+                <h2>Квест 2</h2>
+                <p>Описание квеста 2. Соберите необходимые предметы для выполнения этого задания.</p>
+            </div>
+            <div class="questItem">
+                <h2>Квест 3</h2>
+                <p>Описание квеста 3. Победите врагов в этой битве, чтобы пройти квест.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

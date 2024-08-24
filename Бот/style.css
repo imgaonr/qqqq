@@ -1,0 +1,189 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Убираем скроллбар для мобильных устройств */
+}
+
+#gameContainer, #questsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px; /* Ограничиваем ширину */
+    padding: 10px;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#profileSection {
+    display: flex;
+    align-items: center;
+}
+
+#buySkinButton {
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+#keysSection {
+    display: flex;
+    align-items: center;
+}
+
+#keysIcon {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+#levelIncomeSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+}
+
+#rewardsSection {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.rewardItem {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#coinDisplay {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #ffd700;
+}
+
+#hamsterWrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+    border: 8px solid #3a3a3a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #303030, #4a4a4a);
+}
+
+#hamsterContainer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#hamster {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#energySection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#boostButton {
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Стили для нижней панели навигации */
+#bottomNav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #333;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.navItem {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Стили для секции квестов */
+#questsSection {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#questContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.questItem {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+#backButton {
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
